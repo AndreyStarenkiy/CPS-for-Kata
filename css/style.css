@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TT lakes", sans-serif;
+}
+
+.upper-header {
+    display: flex;
+    height: 88px;
+    width: 100%;
+    border-bottom: 1px solid #D9FFF5;
+    background-color: white !important;
+}
+
+.upper-header__burger {
+    margin: 24px 16px;
+    height: 40px;
+}
+
+.upper-header__logo-link {
+    margin: 18.59px 0;
+    margin-right: 16.73px;
+}
+
+.upper-header__logo-img,
+.upper-header__logo-link {
+    width: 96.55px;
+    height: 50.81px;
+}
+
+.upper-header__border-320-1119 {
+    height: 32px;
+    width: 0;
+    border-radius: 1px;
+    border: 1px solid #EAEAEA;
+    margin: 28px 0;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.upper-header__repair {
+    margin: 24px 0;
+    margin-right: 16px;
+}
+
+.upper-header__checkstatus {
+    margin: 24px 0;
+    margin-right: 16px;
+}
+
+.header,
+.overflow__menu,
+.main,
+.main__cps-img--320px,
+.main__cps-img--768px,
+.main__cps-img--1120px {
+    background-color: #F8F8F8;
+}
+
+/* для другого разрешения*/
+
+.main__cps-img--768px {
+    display: none;
+}
+
+.main__cps-img--1120px {
+    display: none;
+}
+
+.upper-header__border-768-1119 {
+    display: none;
+
+    height: 32px;
+    width: 0;
+    border-radius: 1px;
+    border: 1px solid #EAEAEA;
+    margin: 28px 0;
+    margin-left: 20px;
+    margin-right: 20.7px;
+}
+
+.upper-header__call {
+    display: none;
+    margin: 24px 0;
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.upper-header__chat {
+    display: none;
+    margin: 24px 0;
+    margin-right: 16px;
+}
+
+.upper-header__profile {
+    display: none;
+    margin: 24px 0;
+}
+
+.header__title {
+    float: left;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.header__little-green-border {
+    margin-top: 22px;
+    margin-bottom: 16px;
+    width: 0;
+    height: 40px;
+    border: 2px solid #41F6D7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.header__spacing {
+    display: none;
+    height: 0;
+    width: 100px;
+}
+
+.header__spacing-2 {
+    display: none;
+    height: 0;
+    width: 100px;
+}
+
+.upper-header__checkstatus-text,
+.upper-header__repair-text {
+    display: none;
+}
+
+
+/*
+ДАЛЕЕ МЕЙН
+*/
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header__overflow-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.overflow-menu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.overflow-menu__item {
+    width: auto;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 8px 0;
+    padding-left: 16.5px;
+    padding-right: 9.3px;
+    text-wrap: nowrap;
+}
+
+.overflow-menu__item:focus,
+.overflow-menu__item:active,
+.overflow-menu__item:hover {
+    border-color: #B8FFEC;
+}
+
+.article__text {
+    margin-top: 16px;
+    padding-left: 16px;
+}
+
+.article__text-2 {
+    padding-left: 16px;
+    display: none;
+}
+
+.article__text-2-exp {
+    padding-left: 16px;
+    display: none;
+}
+
+.article__read-more {
+    display: flex;
+    width: auto;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 16px;
+}
+
+.article__expand {
+    height: 24px;
+}
+
+.article__text-button {
+    margin: 0;
+    margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119.98px) {
+    .upper-header__border-320-1119 {
+        margin-left: 20px;
+    }
+
+    .upper-header__border-768-1119,
+    .upper-header__call,
+    .upper-header__chat,
+    .upper-header__profile {
+        display: block;
+    }
+
+    .main__cps-img--320px {
+        display: none;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .main__cps-img--768px {
+        display: inline;
+        margin-top: 16px;
+        margin-right: 25px;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+
+    .article {
+        width: 50%;
+    }
+
+    .article__text-2 {
+        display: block;
+    }
+
+    .header__little-green-border {
+        margin-top: 32px;
+    }
+
+    .header__title {
+        margin-top: 34px;
+    }
+
+    .header__spacing {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .header__spacing-2 {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+
+    .upper-header__burger,
+    .upper-header__logo-link,
+    .upper-header__border-320-1119 {
+        display: none;
+    }
+
+    .upper-header {
+        border-bottom: none;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .main__cps-img--320px {
+        display: none;
+    }
+
+    .main__cps-img--1120px {
+        display: inline;
+        margin-top: 16px;
+        margin-right: 25px;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+
+    .article {
+        width: 50%;
+    }
+
+    .article__text-2-exp {
+        display: block;
+        padding-left: 32px;
+    }
+
+    .header__overflow-menu {
+        flex-wrap: wrap;
+    }
+
+    .upper-header__checkstatus,
+    .upper-header__repair {
+        position: absolute;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .upper-header__checkstatus {
+        top: 10px;
+        right: 30px;
+    }
+
+    .upper-header__repair {
+        position: absolute;
+        top: 10px;
+        right: 240px;
+    }
+
+    .upper-header__repair-text,
+    .upper-header__checkstatus-text {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .upper-header {
+        height: 20px;
+
+    }
+
+
+    .upper-header__repair-img,
+    .upper-header__repair-img {
+        display: inline-block;
+    }
+
+    .header__title {
+        margin-left: 32px;
+    }
+
+    .article__read-more,
+    .article__text,
+    .header__overflow-menu {
+        padding-left: 32px;
+    }
+}
