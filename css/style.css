@@ -455,6 +455,10 @@ article {
         gap: 8px;
     }
 
+    .upper-header__checkstatus {
+        margin-right: 32px;
+    }
+
     .upper-header__checkstatus,
     .upper-header__repair {
         margin-top: auto;
